@@ -24,10 +24,15 @@ $nick_db = $result['name'];
 $select2 = $con->query("SELECT password FROM users WHERE name = '$user'");
 $result2 = $select2->fetch(PDO::FETCH_ASSOC);
 $pass_db = $result2['password'];
-echo $pass_db;
+
+$select3 = $con->query("SELECT keysec FROM users WHERE name = '$user'");
+$result3 = $select3->fetch(PDO::FETCH_ASSOC);
+$key_db = $result3['keysec'];
 
 if ($user == $nick_db){
 	if (md5($pass) == $pass_db){
+		$_SESSION['usuario'] = $nick_db;
+		$_SESSION['keysec'] = $key_db;
 		header("Location: ../restrito");
 	}else{
 		$_SESSION['msg'] = "A senha está incorreta";
