@@ -13,7 +13,7 @@ session_start();
 if (isset($_SESSION['keysec'])){
 	echo "<body class='body_sign'>
 		<form>
-			<input type='text' class='fixed' placeholder='Messagem' name='cmd'>
+			<input type='text' class='fixed' placeholder='Messagem' name='cmd'><button></button>
 		</form>
 	</body>";
 }else{
