@@ -37,12 +37,11 @@
 	<div class="login_sign">
 		<img src="../img/mr.gif" class="banner"><br>
 		<img src="../img/evil.png" class="logo"><br>
-		<form method="post" action="data_log.php">
-			
+		<form method="post" action="data.php">
+			<input type="text" name="user" placeholder="Nick" class="inputs"><br>
+			<input type="password" name="pass" placeholder="Password" class="inputs">
+			<input type="submit" class="bnt_log bnt" value="Entrar">
 		</form>
-		<input type="text" name="user" placeholder="Nick" class="inputs"><br>
-		<input type="password" name="pass" placeholder="Password" class="inputs">
-		<input type="submit" class="bnt_log bnt" value="Entrar">
 	</div>
 </body>
 </html>

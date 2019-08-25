@@ -12,7 +12,7 @@ session_start();
 if (!empty($_POST) AND (empty($_POST['user']) OR empty($_POST['pass']))){ 
 	$_SESSION['msg'] = "Todos os campos são obrigatorios";
 	$_SESSION['type'] = "error";
-	header("Location: sign.php");
+	header("Location: index.php");
 	exit;
 }
 
@@ -23,7 +23,7 @@ $nick_db = $result['name'];
 if($user == $nick_db){
 	$_SESSION['msg'] = "O nick $user já existente";
 	$_SESSION['type'] = "error";
-	header("Location: sign.php");
+	header("Location: index.php");
 	exit;
 }else{
 	$query = $con->prepare("INSERT INTO users(name,keysec,password) VALUES(:name, :keysec, :password)");
@@ -34,6 +34,6 @@ if($user == $nick_db){
 	$_SESSION['msg'] = "Usuario cadastrado com sucesso";
 	$_SESSION['type'] = "success";
 	$_SESSION['keysec'] = md5($user+$pass);
-	header("Location: login.php");
+	header("Location: ../login");
 }
 ?>
