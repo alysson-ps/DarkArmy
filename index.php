@@ -10,6 +10,7 @@
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 
+		<?php session_unset();?>
 		<script type="text/javascript">
 			$(document).ready(function(){
 				// esconder a div login
