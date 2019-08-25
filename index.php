@@ -35,12 +35,12 @@
 
 				// redireconar ao clicar no botão "in"
 				$(".in").click(function(){
-					$(window.document.location).attr('href','sign.php');
+					$(window.document.location).attr('href','sign');
 				});
 
 				// redireconar ao clicar no botão "out"
 				$(".out").click(function(){
-					$(window.document.location).attr('href','login.php');
+					$(window.document.location).attr('href','login');
 				});
 			});
 		</script>
