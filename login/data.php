@@ -33,7 +33,7 @@ if ($user == $nick_db){
 	if (md5($pass) == $pass_db){
 		$_SESSION['usuario'] = $nick_db;
 		$_SESSION['keysec'] = $key_db;
-		header("Location: ../restrito");
+		header("Location: ../restrito/home.php");
 	}else{
 		$_SESSION['msg'] = "A senha está incorreta";
 		$_SESSION['type'] = "error";

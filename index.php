@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>DarkArmy</title>
+		<meta charset="utf-8" />
 		<!-- Aquivos de estilo -->
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/theme.css">
@@ -14,26 +15,21 @@
 		<script type="text/javascript">
 			$(document).ready(function(){
 				// esconder a div login
-				$('.login_index').hide();
+				// $('.login_index').hide();
 
 				//Quando precionar "Enter" aparece a div login
 				$(document).keypress(function(key){
 					if (key.which == 13){
 						$('.login_index')
-							.hide()
+							.css("display","block")
 							.delay('1000')
 							.fadeIn('slow');
-					}
-				});
-				//Quando precionar "Enter" esconde a div login
-				$(document).keypress(function(key){
-					if (key.which == 0){
-						$('.login_index')
+						$('.play')
+							.hide()
 							.delay('1000')
 							.fadeOut('slow');
 					}
 				});
-
 				// redireconar ao clicar no botão "in"
 				$(".in").click(function(){
 					$(window.document.location).attr('href','sign');
@@ -58,5 +54,8 @@
 				</div>
 			</div>
 		</div>
+		<center>
+			<h1 class="play">Press Enter</h1>
+		</center>
 	</body>
 </html>

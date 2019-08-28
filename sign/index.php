@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8" />
 	<title>Sign | DarkArmy</title>
 	<!-- Aquivos de estilo -->
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
