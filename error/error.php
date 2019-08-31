@@ -9,7 +9,7 @@
 		$(document).ready(function(){
 			swal({title:'Erro',text:'Acesso Negado',icon:'error',button:'Tente novamente'})
 				.then((value) => {
-					$(window.document.location).attr('href','../index.php');
+					$(window.document.location).attr('href','../login/');
 			});
 		});
 	</script>
