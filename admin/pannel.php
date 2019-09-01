@@ -46,7 +46,7 @@
 	  <div class="form-row">
 	    <div class="form-group col-md-6">
 	      <label for="inputEmail4">Nome</label>
-	      <input type="text" class="form-control" name="Nome" placeholder="Nome">
+	      <input type="text" class="form-control" name="nome" placeholder="Nome">
 	    </div>
 	    <div class="form-group col-md-6">
 	      <label for="inputPassword4">Sobrenome</label>
