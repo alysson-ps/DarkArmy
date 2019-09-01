@@ -8,10 +8,24 @@
 	<script type="text/javascript" src="../js/sweetalert.min.js"></script>
 	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
 	<title>DarkArmy</title>
-
 	<style type="text/css">
-		body{
-
+		.card{
+			width: 310px;
+			margin-top:20px;
+			padding-top:10px;
+			position:relative;
+			box-shadow: 0 0 15px black;
+		}
+		a[href="#top"]{
+		    padding:10px;
+		    position:fixed;
+		    top: 90%;
+		    right:40px;
+		    display:none;
+		    font-size: 30px;
+		}
+		a[href="#top"]:hover{
+		    text-decoration:none;
 		}
 	</style>
 </head>
@@ -30,6 +44,7 @@
 	<!-- fim da barra -->
 	<div id="top"></div>
 	<br><br><br>
+	
 	<?php echo "<div class='card-deck' style='width:101%;position:relative;left:10px'>"; ?>
 	<?php
 	session_start();
@@ -68,7 +83,7 @@
 		echo "
 		<div class='row'>
 		<div class='col-sm-8'>
-		<div class='card' style='width: 310px;margin-top:20px;position:relative;box-shadow: 0 0 15px black'>
+		<div class='card'>
 		  <img src='$img' class='card-img-top'>
 		  <div class='card-body'>
 		    <h5 class='card-title'>Nome: $name $secund</h5>
@@ -81,7 +96,8 @@
 	}
 	?>
 	<?php echo "</div><br>"; ?>
-	<footer class="page-footer font-small" style="background-color: #fd4e21">
+
+	<footer class="page-footer font-small" style="background-color: rgba(0,0,20);color: white">
 		<div class="footer-copyright text-center py-3">© 2019 Copyright:
 			<a href="#">DarkArmy</a>
 		</div>
