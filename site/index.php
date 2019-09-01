@@ -75,29 +75,51 @@
 
 	$query = $con->query("SELECT * FROM victims LIMIT 20");
 	$data = $query->fetchall(PDO::FETCH_ASSOC);
-	foreach ($data as $dados){
-		$name = $dados['nome'];
-		$secund = $dados['sobre'];
-		$img = $dados['image'];
-		$city = $dados['cidade'];
-		echo "
-		<div class='row'>
-		<div class='col-sm-8'>
-		<div class='card'>
-		  <img src='$img' class='card-img-top'>
-		  <div class='card-body'>
-		    <h5 class='card-title'>Nome: $name $secund</h5>
-		    <p class='card-text'>Cidade: $city</p>
-		    <a href='#' class='btn btn-primary'>Credenciais</a>
-		  </div>
-		</div>
-		</div>
-		</div>";
+	if (isset($dados)){
+		foreach ($data as $dados){
+			$name = $dados['nome'];
+			$secund = $dados['sobre'];
+			$img = $dados['image'];
+			$city = $dados['cidade'];
+			echo "
+			<div class='row'>
+			<div class='col-sm-8'>
+			<div class='card'>
+			  <img src='$img' class='card-img-top'>
+			  <div class='card-body'>
+			    <h5 class='card-title'>Nome: $name $secund</h5>
+			    <p class='card-text'>Cidade: $city</p>
+			    <a href='#' class='btn btn-primary'>Credenciais</a>
+			  </div>
+			</div>
+			</div>
+			</div>";
+		}
+	}else{
+		echo "<center><h1 style='position:relative;left:95%;font-family:hack'>Sem Credenciais no momento</h1></center>";
 	}
 	?>
 	<?php echo "</div><br>"; ?>
-
-	<footer class="page-footer font-small" style="background-color: rgba(0,0,20);color: white">
+	<nav aria-label="Page navigation example">
+	  <ul class="pagination">
+	    <li class="page-item">
+	      <a class="page-link" href="#" aria-label="Previous">
+	        <span aria-hidden="true">&laquo;</span>
+	        <span class="sr-only">Previous</span>
+	      </a>
+	    </li>
+	    <li class="page-item"><a class="page-link" href="#">1</a></li>
+	    <li class="page-item"><a class="page-link" href="#">2</a></li>
+	    <li class="page-item"><a class="page-link" href="#">3</a></li>
+	    <li class="page-item">
+	      <a class="page-link" href="#" aria-label="Next">
+	        <span aria-hidden="true">&raquo;</span>
+	        <span class="sr-only">Next</span>
+	      </a>
+	    </li>
+	  </ul>
+	</nav>
+	<footer class="page-footer font-small fixed-bottom" style="background-color: rgba(0,0,20);color: white">
 		<div class="footer-copyright text-center py-3">© 2019 Copyright:
 			<a href="#">DarkArmy</a>
 		</div>
