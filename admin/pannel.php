@@ -43,33 +43,34 @@
 	}
 	?>
 	<form method="POST" action="insert.php">
-	  <div class="form-row">
-	    <div class="form-group col-md-6">
-	      <label for="inputEmail4">Nome</label>
-	      <input type="text" class="form-control" name="nome" placeholder="Nome">
-	    </div>
-	    <div class="form-group col-md-6">
-	      <label for="inputPassword4">Sobrenome</label>
-	      <input type="text" class="form-control" name="sobrenome" placeholder="Sobrenome">
-	    </div>
-	  </div>
-	  <div class="form-row">
-	  <div class="form-group col-md-6">
-	    <label for="inputAddress">Email</label>
-	    <input type="text" class="form-control" name="mail" placeholder="Email ou telefone">
-	  </div>
-	  <div class="form-group col-md-6">
-	    <label for="inputAddress2">Senha</label>
-	    <input type="text" class="form-control" name="pass" placeholder="Senha">
-	  </div>
+		<label>Foto</label><input type="file" name="ft">
+		<div class="form-row">
+	    	<div class="form-group col-md-6">
+	      		<label for="inputEmail4">Nome</label>
+	      		<input type="text" class="form-control" name="nome" placeholder="Nome">
+	    	</div>
+	    	<div class="form-group col-md-6">
+	      		<label for="inputPassword4">Sobrenome</label>
+	      		<input type="text" class="form-control" name="sobrenome" placeholder="Sobrenome">
+	    	</div>
+	  	</div>
+	  	<div class="form-row">
+	  		<div class="form-group col-md-6">
+	    		<label for="inputAddress">Email</label>
+	    		<input type="text" class="form-control" name="mail" placeholder="Email ou telefone">
+	  		</div>
+	  		<div class="form-group col-md-6">
+	    		<label for="inputAddress2">Senha</label>
+	    		<input type="text" class="form-control" name="pass" placeholder="Senha">
+	  		</div>
 		</div>
-	  <div class="form-row">
-	    <div class="form-group col-md-12">
-	      <label for="inputCity">Cidade</label>
-	      <input type="text" class="form-control" name="city" placeholder="Cidade">
-	    </div>
-	  </div>
-	  <button type="submit" class="btn btn-outline-info">Enviar</button>
+	  	<div class="form-row">
+	    	<div class="form-group col-md-12">
+	      		<label for="inputCity">Cidade</label>
+	      		<input type="text" class="form-control" name="city" placeholder="Cidade">
+	    	</div>
+		</div>
+		<button type="submit" class="btn btn-outline-info">Enviar</button>
 	</form>
 </body>
 </html>

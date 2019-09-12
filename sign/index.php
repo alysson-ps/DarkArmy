@@ -39,8 +39,9 @@
 <body class="body_sign">
 	<div class="login_sign">
 		<img src="../img/mr.gif" class="banner"><br>
-		<img src="../img/evil.png" class="logo"><br>
-		<form method="post" action="data.php">		
+		<img src="../img/evil.png" class="logo" style="margin-top: 0px"><br>
+		<form method="post" action="data.php">
+			<input type="text" name="nome" placeholder="Nome" class="inputs"><br>
 			<input type="text" name="user" placeholder="Nick" class="inputs"><br>
 			<input type="password" name="pass" placeholder="Password" class="inputs">
 			<input type="submit" class="bnt_log bnt" value="Cadastrar">

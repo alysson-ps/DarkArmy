@@ -34,11 +34,12 @@
 	<nav class="navbar fixed-top navbar-dark bg-dark" style="box-shadow: 0 0 15px black">
 		<a class="navbar-brand" href="#">
     		<img src="../img/key.png" width="30" height="30" class="d-inline-block align-top">
-    		If_Dark
+    		<b>DarkArmy</b>
     	</a>
 		<form class="form-inline">
     		<input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
     		<button class="btn btn-danger my-2 my-sm-0" type="submit">Pesquisar</button>
+			<img src="arrow.png" width="32" height="32" style="margin-left:40px"><b style="color:white">Sair</b>
   		</form>
 	</nav>
 	<!-- fim da barra -->
@@ -96,29 +97,10 @@
 			</div>";
 		}
 	}else{
-		echo "<center><h1 style='position:relative;left:95%;font-family:hack'>Sem Credenciais no momento</h1></center>";
+		echo "<center><h1 style='position:absolute;left:31.6%;font-family:hack'>Nunhuma credencial no memento</h1></center>";
 	}
 	?>
 	<?php echo "</div><br>"; ?>
-	<nav aria-label="Page navigation example">
-	  <ul class="pagination">
-	    <li class="page-item">
-	      <a class="page-link" href="#" aria-label="Previous">
-	        <span aria-hidden="true">&laquo;</span>
-	        <span class="sr-only">Previous</span>
-	      </a>
-	    </li>
-	    <li class="page-item"><a class="page-link" href="#">1</a></li>
-	    <li class="page-item"><a class="page-link" href="#">2</a></li>
-	    <li class="page-item"><a class="page-link" href="#">3</a></li>
-	    <li class="page-item">
-	      <a class="page-link" href="#" aria-label="Next">
-	        <span aria-hidden="true">&raquo;</span>
-	        <span class="sr-only">Next</span>
-	      </a>
-	    </li>
-	  </ul>
-	</nav>
 	<footer class="page-footer font-small fixed-bottom" style="background-color: rgba(0,0,20);color: white">
 		<div class="footer-copyright text-center py-3">© 2019 Copyright:
 			<a href="#">DarkArmy</a>

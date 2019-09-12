@@ -12,7 +12,9 @@
 
 	<title>Pannel</title>
 </head>
-<body style="background: #475d62">
+<body style="">
+    <div class="img" style="width: 100%;height: 100%;background: url(img/tela.png);position: absolute;filter: blur(2px);">
+    </div> 
     <div class="login-dark">
         <form method="post" action="data.php">
             <h2 class="sr-only">Login Form</h2>
@@ -20,13 +22,13 @@
             	<i class="icon ion-ios-locked-outline"></i>
             </div>
             <div class="form-group">
-            	<input class="form-control" type="email" name="email" placeholder="Email">
+            	<input class="form-control" type="text" name="email" placeholder="Email" style="border-color:white">
             </div>
             <div class="form-group">
-            	<input class="form-control" type="password" name="password" placeholder="Password">
+            	<input class="form-control" type="password" name="password" placeholder="Senha" style="border-color:white">
             </div>
             <div class="form-group">
-            	<button class="btn btn-primary btn-block" type="submit">Log In</button>
+            	<button class="btn btn-primary btn-block" type="submit">Entrar</button>
             </div>
         </form>
     </div>
