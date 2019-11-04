@@ -29,9 +29,9 @@
 		}
 	</style>
 </head>
-<body style="overflow-x: hidden;">
+<body style="overflow-x: hidden;background-color: white;">
 	<!-- começo da barra de navegaçao -->
-	<nav class="navbar fixed-top navbar-dark bg-dark" style="box-shadow: 0 0 15px black">
+	<nav class="navbar fixed-top" style="background-color: rgba(0,0,20)">
 		<a class="navbar-brand" href="#">
     		<img src="../img/key.png" width="30" height="30" class="d-inline-block align-top">
     		<b>DarkArmy</b>
@@ -97,13 +97,16 @@
 			</div>";
 		}
 	}else{
-		echo "<center><h1 style='position:absolute;left:31.6%;font-family:hack'>Nunhuma credencial no memento</h1></center>";
+		echo "<img src='error-404.png' width=300 style='position:absolute;left:40%;top:50px'>
+				<h1 style='position:absolute;left:31.6%;top:400px;font-family:hack'>
+					Nunhuma credencial no memento
+				</h1>";
 	}
 	?>
 	<?php echo "</div><br>"; ?>
 	<footer class="page-footer font-small fixed-bottom" style="background-color: rgba(0,0,20);color: white">
 		<div class="footer-copyright text-center py-3">© 2019 Copyright:
-			<a href="#">DarkArmy</a>
+			<a href="#">Alysson</a>
 		</div>
 	</footer>
 </body>
